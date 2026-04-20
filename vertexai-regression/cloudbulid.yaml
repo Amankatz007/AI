@@ -7,7 +7,7 @@ steps:
   # Step 2: Run the submission script
   - name: 'python:3.9'
     entrypoint: 'python'
-    args: ['run_pipeline.py']
+    args: ['vertexai-regression/run_pipeline.py']
     env:
       - 'PROJECT_ID=$PROJECT_ID'
       - 'REGION=us-central1'
